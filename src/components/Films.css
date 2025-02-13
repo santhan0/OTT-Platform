@@ -1,0 +1,52 @@
+.fullpa{
+    background-color: black;
+    height: auto;
+    color: rgb(218, 218, 218);
+}
+.moid{
+    display:flex
+}
+.moid img{
+    height: 170px;
+    width:120px;
+    border-radius: 5%;
+    position: relative;
+    left: -45px;
+}
+.moid h1{
+    font-size: 230px;
+    position: relative;
+    top: -65px;
+    color: rgb(62, 59, 59);
+    font-weight: bolder;
+}
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+}
+.moc{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.mli img{
+    height:130px;
+    width:220px;
+    margin-right: 10px;
+    border-radius: 4%;
+}
+.ml{
+    display: flex;
+    overflow-x: auto;
+}
+.tit{
+    position: relative;
+    top:-70px;
+}
+.language-section h2{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.language-section{
+    position: relative;
+    top:-60px;
+}

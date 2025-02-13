@@ -1,0 +1,104 @@
+/* General container styling */
+.con {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #373737;
+    /* border: 1px solid #a4a1a1; */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .full{
+    background-color: black;
+  }
+  /* Header styling */
+  .con h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Form group styling */
+  .fg {
+    margin-bottom: 15px;
+  }
+  
+  .fg label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .fg input,
+  .fg textarea,
+  .fg select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #000000a4;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .fg input:focus,
+  .fg textarea:focus,
+  .fg select:focus {
+    /* border-color: #fbfafa; */
+    outline: none;
+  }
+  .fg option{
+    color: white;
+  }
+  .fg select[name]{
+    color: white;
+  }
+  /* Textarea height adjustment */
+  .fg textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Submit button styling */
+  .btna {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btna:hover {
+    background-color: #b30000;
+  }
+  
+  /* Success and error messages */
+  .message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .message.success {
+    color: #20ac41;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .message.error {
+    color: #850c18;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  

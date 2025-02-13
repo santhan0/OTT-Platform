@@ -1,0 +1,191 @@
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is on top of everything */
+}
+
+.video-overlay {
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    height: 80%; /* Adjust as needed */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card {
+    background-color: black;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-10px); /* Card shifts up slightly */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for opacity and transform */
+    position: relative; /* Position it over the image */
+    top: -130px; /* Align card to the top of the image */
+    left: 0; /* Align card to the left of the image */
+    z-index: 10; /* Ensure card is on top */
+    pointer-events: none; /* Prevent interaction until visible */
+    width: 20rem; /* Fixed width for consistent layout */
+    bottom:100px;
+    border-radius: 5%;
+}
+.card-body {
+    color: white;
+    background-color: rgba(38, 37, 37, 0.8); /* Optional: Make the background slightly transparent */
+}
+.card-title{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.card-text {
+    color: rgb(151, 151, 151);
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure all text is visible */
+    text-overflow: unset; /* No ellipsis or truncation */
+    max-height: none; /* Remove height limit */
+    font-size: 12px;
+}
+.card-img-top{
+    height:190px;
+}
+.card-gl{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .image-container{
+    margin-right: -85px;
+ }
+.image-container:hover .card {
+    /* display: block; Show card on hover */
+    opacity: 1; /* Show card on hover */
+  transform: translateY(0); /* No upward shift */
+  pointer-events: auto; /* Enable interaction */
+}
+.mainc{
+    margin-left: 10px;
+}
+* ::-webkit-scrollbar{
+    display: none;
+}
+.na-s{
+    position:relative;
+    bottom: 405px;
+}
+.mo{
+    display: flex;
+    overflow-x: scroll;
+    position:relative;
+    /* top:500px; */
+}
+.web-container{
+    display: flex;
+    overflow-x: scroll;
+    position:relative;
+    bottom:400px;
+}
+
+.homeimg {
+    background-color: rgb(0, 0, 0);
+    background-image: url("./img/strangerthings.webp");
+    background-repeat: no-repeat;
+    background-size: 100vw 600px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.5s ease;
+    color: rgb(224, 224, 224);    
+}
+.imgtitle{
+    padding-left: 100px;
+    color: rgb(224, 224, 224);
+    padding-top: 150px;
+}
+.discription{
+    width: 380px;
+}
+.playbtn {
+    
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    align-items:center;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: #ec2222;
+    color: rgb(174, 160, 160);
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+.playbtn span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.playbtn:hover span {
+    color: #fff;
+}
+
+.playbtn::before,
+.playbtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.playbtn::before {
+    background: #ffffff;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.playbtn:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.playbtn:focus {
+    outline: none;
+    /* box-shadow: 0 0 0 3px rgba(236, 34, 34, 0.5); */
+}
+
+/* Optional: Add a slight hover scaling effect */
+.playbtn:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
